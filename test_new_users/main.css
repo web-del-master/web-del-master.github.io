@@ -1,0 +1,61 @@
+body{
+    width:970px;
+    margin:0 auto;
+    text-align: center;
+}
+ul{
+    padding:0px;
+    margin:0px;
+}
+li{
+    list-style-type: none;
+}
+p{
+    margin:0px;
+    text-align: left;
+}
+.pattern_list{
+    display:table;
+}
+.hidden{
+    display: none;
+}
+/* Скрываем подписи на radio button */
+.answer_item_text{
+    display:none;
+}
+.answer{
+    flex-shrink:0;
+}
+.result{
+    margin-bottom: 50px;
+}
+
+
+.specification{
+    width:900px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-bottom:20px;   
+}
+.specification span{
+    font-size:12px;
+    margin:0 9px;
+}
+
+
+.pattern_list{
+    margin:0 auto;
+}
+
+.pattern_list__items{
+    width:900px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.answer_items{
+    margin:0px 19px;
+}
