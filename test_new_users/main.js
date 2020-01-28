@@ -8,6 +8,10 @@ window.onload = function(){
     let past_relationships_result = document.querySelector('.past_relationships_result');
     let communication_result =      document.querySelector('.communication_result');
 
+    let section_result =            document.querySelector('.result');
+    let error =            document.querySelector('.error');
+
+
     let get_result =                document.querySelector('.get_result');
 
     let self_rating_item =  0;
@@ -19,36 +23,39 @@ window.onload = function(){
     let past_relationships_item=  0;
     let communication_item=  0;
 
-    get_result.addEventListener('click', result);
+    get_result.addEventListener('click', result);    
 
       
     function result(){
         let check = document.querySelectorAll('input:checked'); 
 
-        if(check.length == 33 ){
+        if(check.length == 32 ){
+            error.classList.add('v-hidden');
             for(let i=0; i< check.length; i++){
                 if(check[i].classList.contains('self-rating_item')){
-                    self_rating_item += +(check[i].id);
+                    self_rating_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('self-acceptance_item')){
-                    self_acceptance_item += +(check[i].id);
+                    self_acceptance_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('scope_item')){
-                    scope_item += +(check[i].id);
+                    scope_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('emotion_item')){
-                    emotion_item += +(check[i].id);
+                    emotion_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('sexuality_item')){
-                    sexuality_item += +(check[i].id);
+                    sexuality_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('fear_item')){
-                    fear_item += +(check[i].id);
+                    fear_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('past_relationships_item')){
-                    past_relationships_item += +(check[i].id);
+                    past_relationships_item += +(check[i].getAttribute('data-value'));
                 }else if(check[i].classList.contains('communication_item')){
-                    communication_item += +(check[i].id);
+                    communication_item += +(check[i].getAttribute('data-value'));
                 }                
             }  
             inpur_disable();
-            set_summ();
+                 set_summ();
+                 section_result.classList.toggle('show');
+                 get_result.desabled = true;        
         } else {
-            console.log('вы ответили не на все вопросы')
+            error.classList.remove('v-hidden');
         }          
     }
 
@@ -68,6 +75,9 @@ window.onload = function(){
         fear_result.innerHTML =                 fear_item;
         past_relationships_result.innerHTML =   past_relationships_item;
         communication_result.innerHTML =        communication_item;      
+
+    }
+    function show_block(){
 
     }
 
