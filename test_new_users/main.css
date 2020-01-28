@@ -147,8 +147,9 @@ section{
         font-size: 21px;
         margin-top: 28px;
     }
-    section{
-        width: width: calc(100vw - 20px);
+    section{   
+        max-width:100vw;
+        margin:0 auto;     
     }
     .specification{
         display: none;
@@ -156,9 +157,10 @@ section{
     .pattern_list__items{
         flex-direction: column; 
         max-width:100vw;
-        margin-left:15px;       
+        margin-left:15px;      
     }
     .pattern_list__items p {
+        width:90vw; ;
         margin-bottom: 20px;
     }
     .answer{
