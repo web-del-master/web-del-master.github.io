@@ -186,4 +186,7 @@ section{
          margin-bottom: 10px;
          text-align: center;
      }
+     .past_relationships_result{
+         display: inline;
+     }
   }
