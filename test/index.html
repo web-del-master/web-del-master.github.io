@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Опрос для новых клиентов</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1 class="mian-header">Тест для новых клиентов</h1>
+    <section class="specification">
+        <p>Вопрос</p>
+        <div>
+            <span>Постоянно</span>
+            <span>Часто</span>
+            <span>Иногда</span>
+            <span>Редко</span>
+            <span>Никогда</span>
+        </div>
+    </section>
+    <section class="pattern self-rating">
+        <h2 class="hidden">Самооценка</h2>
+        <ul class="pattern_list">
+            <li class="pattern_list__items">         
+                <p class="question">Я чувствую неуверенность в себе</p>
+                <div class="answer">
+                <span>
+                    <input type="radio" class="answer_items self-rating_item" name="self-rating_items1" id="self-rating_item4_1" data-value="4">
+                    <label class="answer_item_text" for="self-rating_item4_1">Постоянно</label>
+                </span>
+                <span>
+                    <input type="radio" class="answer_items self-rating_item" name="self-rating_items1" id="self-rating_item3_1" data-value="3">               
+                    <label class="answer_item_text" for="self-rating_item3_1">Часто</label> 
+                </span>
+                <span>
+                    <input type="radio" class="answer_items self-rating_item" name="self-rating_items1" id="self-rating_item2_1" data-value="2">
+                    <label class="answer_item_text" for="self-rating_item2_1">Иногда</label> 
+                </span>
+                <span>
+                    <input type="radio" class="answer_items self-rating_item" name="self-rating_items1" id="self-rating_item1_1" data-value="1">
+                    <label class="answer_item_text" for="self-rating_item1_1"> Редко</label>
+                </span>
+                <span>
+                    <input type="radio" class="answer_items self-rating_item" name="self-rating_items1" id="self-rating_item0_1" data-value="0">
+                    <label class="answer_item_text" for="self-rating_item0_1">Никогда</label>
+                </span>                    
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Мне бы хотелось больше уважать себя</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items2" id="self-rating_item4_2" data-value="4">
+                        <label class="answer_item_text" for="self-rating_item4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items2" id="self-rating_item3_2" data-value="3">               
+                        <label class="answer_item_text" for="self-rating_item3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items2" id="self-rating_item2_2" data-value="2">
+                        <label class="answer_item_text" for="self-rating_item2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items2" id="self-rating_item1_2" data-value="1">
+                        <label class="answer_item_text" for="self-rating_item1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items2" id="self-rating_item0_2" data-value="0">
+                        <label class="answer_item_text" for="self-rating_item0_2">Никогда</label>
+                    </span> 
+                </div> 
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Иногда я чувствую, что ни на что не гожусь</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items3" id="self-rating_item4_3" data-value="4">
+                        <label class="answer_item_text" for="self-rating_item4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items3" id="self-rating_item3_3" data-value="3">               
+                        <label class="answer_item_text" for="self-rating_item3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items3" id="self-rating_item2_3" data-value="2">
+                        <label class="answer_item_text" for="self-rating_item2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items3" id="self-rating_item1_3" data-value="1">
+                        <label class="answer_item_text" for="self-rating_item1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items3" id="self-rating_item0_3" data-value="0">
+                        <label class="answer_item_text" for="self-rating_item0_3">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я боюсь допустить ошибку, которую заметят окружающие</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items4" id="self-rating_item4_4" data-value="4">
+                        <label class="answer_item_text" for="self-rating_item4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items4" id="self-rating_item3_4" data-value="3">               
+                        <label class="answer_item_text" for="self-rating_item3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items4" id="self-rating_item2_4" data-value="2">
+                        <label class="answer_item_text" for="self-rating_item2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items4" id="self-rating_item1_4" data-value="1">
+                        <label class="answer_item_text" for="self-rating_item1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-rating_item" name="self-rating_items4" id="self-rating_item0_4" data-value="0">
+                        <label class="answer_item_text" for="self-rating_item0_4">Никогда</label>
+                    </span>
+                </div> 
+            </li>
+        </ul>
+    </section>
+    <section class="pattern self-acceptance">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Мне бы хотелось больше уважать себя</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items1" id="self-acceptance_item4_1" data-value="4">
+                        <label class="answer_item_text" for="self-acceptance_item4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items1" id="self-acceptance_item3_1" data-value="3">               
+                        <label class="answer_item_text" for="self-acceptance_item3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items1" id="self-acceptance_item2_1" data-value="2">
+                        <label class="answer_item_text" for="self-acceptance_item2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items1" id="self-acceptance_item1_1" data-value="1">
+                        <label class="answer_item_text" for="self-acceptance_item1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items1" id="self-acceptance_item0_1" data-value="0">
+                        <label class="answer_item_text" for="self-acceptance_item0_1">Никогда</label>
+                    </span>               
+                </div> 
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Мне не нравится моё тело, я не принимаю его</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items2" id="self-acceptance_item4_2" data-value="4">
+                        <label class="answer_item_text" for="self-acceptance_item4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items2" id="self-acceptance_item3_2" data-value="3">               
+                        <label class="answer_item_text" for="self-acceptance_item3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items2" id="self-acceptance_item2_2" data-value="2">
+                        <label class="answer_item_text" for="self-acceptance_item2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items2" id="self-acceptance_item1_2" data-value="1">
+                        <label class="answer_item_text" for="self-acceptance_item1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items2" id="self-acceptance_item0_2" data-value="0">
+                        <label class="answer_item_text" for="self-acceptance_item0_2">Никогда</label>
+                    </span>  
+                </div> 
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я не понимаю, чего же хочу на самом деле</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items3" id="self-acceptance_item4_3" data-value="4">
+                        <label class="answer_item_text" for="self-acceptance_item4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items3" id="self-acceptance_item3_3" data-value="3">               
+                        <label class="answer_item_text" for="self-acceptance_item3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items3" id="self-acceptance_item2_3" data-value="2">
+                        <label class="answer_item_text" for="self-acceptance_item2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items3" id="self-acceptance_item1_3" data-value="1">
+                        <label class="answer_item_text" for="self-acceptance_item1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items3" id="self-acceptance_item0_3" data-value="0">
+                        <label class="answer_item_text" for="self-acceptance_item0_3">Никогда</label>
+                    </span> 
+                </div> 
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я подолгу сомневаюсь, достаточно ли хорошо я выгляжу</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items4" id="self-acceptance_item4_4" data-value="4">
+                        <label class="answer_item_text" for="self-acceptance_item4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items4" id="self-acceptance_item3_4" data-value="3">               
+                        <label class="answer_item_text" for="self-acceptance_item3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items4" id="self-acceptance_item2_4" data-value="2">
+                        <label class="answer_item_text" for="self-acceptance_item2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items4" id="self-acceptance_item1_4" data-value="1">
+                        <label class="answer_item_text" for="self-acceptance_item1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items self-acceptance_item" name="self-acceptance_items4" id="self-acceptance_item0_4" data-value="0">
+                        <label class="answer_item_text" for="self-acceptance_item0_4">Никогда</label>
+                    </span>
+                </div> 
+            </li>
+        </ul>
+    </section>
+    <section class="pattern scope">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Я часто иду на поводу чужих желаний и мнений</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items1" id="scope_items4_1" data-value="4">
+                        <label class="answer_item_text" for="scope_items4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items1" id="scope_items3_1" data-value="3">               
+                        <label class="answer_item_text" for="scope_items3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items1" id="scope_items2_1" data-value="2">
+                        <label class="answer_item_text" for="scope_items2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items1" id="scope_items1_1" data-value="1">
+                        <label class="answer_item_text" for="scope_items1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items1" id="scope_items0_1" data-value="0">
+                        <label class="answer_item_text" for="scope_items0_1">Никогда</label>
+                    </span>                
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Мне сложно отстаивать своё мнение и личное пространство</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items2" id="scope_items4_2" data-value="4">
+                        <label class="answer_item_text" for="scope_items4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items2" id="scope_items3_2" data-value="3">               
+                        <label class="answer_item_text" for="scope_items3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items2" id="scope_items2_2" data-value="2">
+                        <label class="answer_item_text" for="scope_items2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items2" id="scope_items1_2" data-value="1">
+                        <label class="answer_item_text" for="scope_items1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items2" id="scope_items0_2" data-value="0">
+                        <label class="answer_item_text" for="scope_items0_2">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Мне сложно отказывать людям</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items3" id="scope_items4_3" data-value="4">
+                        <label class="answer_item_text" for="scope_items4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items3" id="scope_items3_3" data-value="3">               
+                        <label class="answer_item_text" for="scope_items3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items3" id="scope_items2_3" data-value="2">
+                        <label class="answer_item_text" for="scope_items2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items3" id="scope_items1_3" data-value="1">
+                        <label class="answer_item_text" for="scope_items1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items3" id="scope_items0_3" data-value="0">
+                        <label class="answer_item_text" for="scope_items0_3">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Кажется, что мной легко манипулировать</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items4" id="scope_items4_4" data-value="4">
+                        <label class="answer_item_text" for="scope_items4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items4" id="scope_items3_4" data-value="3">               
+                        <label class="answer_item_text" for="scope_items3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items4" id="scope_items2_4" data-value="2">
+                        <label class="answer_item_text" for="scope_items2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items4" id="scope_items1_4" data-value="1">
+                        <label class="answer_item_text" for="scope_items1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items scope_item" name="scope_items4" id="scope_items0_4" data-value="0">
+                        <label class="answer_item_text" for="scope_items0_4">Никогда</label>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="pattern emotion">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Мне тяжело понять свои эмоции, потребности и желания</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items1" id="emotion_items4_1" data-value="4">
+                        <label class="answer_item_text" for="emotion_items4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items1" id="emotion_items3_1" data-value="3">               
+                        <label class="answer_item_text" for="emotion_items3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items1" id="emotion_items2_1" data-value="2">
+                        <label class="answer_item_text" for="emotion_items2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items1" id="emotion_items1_1" data-value="1">
+                        <label class="answer_item_text" for="emotion_items1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items1" id="emotion_items0_1" data-value="0">
+                        <label class="answer_item_text" for="emotion_items0_1">Никогда</label>
+                    </span>                
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Эмоции часто берут надо мной верх</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items2" id="emotion_items4_2" data-value="4">
+                        <label class="answer_item_text" for="emotion_items4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items2" id="emotion_items3_2" data-value="3">               
+                        <label class="answer_item_text" for="emotion_items3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items2" id="emotion_items2_2" data-value="2">
+                        <label class="answer_item_text" for="emotion_items2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items2" id="emotion_items1_2" data-value="1">
+                        <label class="answer_item_text" for="emotion_items1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items2" id="emotion_items0_2" data-value="0">
+                        <label class="answer_item_text" for="emotion_items0_2">Никогда</label>
+                    </span>  
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Иногда я не понимаю, почему отреагировала на некоторые события так, а не иначе</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items3" id="emotion_items4_3" data-value="4">
+                        <label class="answer_item_text" for="emotion_items4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items3" id="emotion_items3_3" data-value="3">               
+                        <label class="answer_item_text" for="emotion_items3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items3" id="emotion_items2_3" data-value="2">
+                        <label class="answer_item_text" for="emotion_items2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items3" id="emotion_items1_3" data-value="1">
+                        <label class="answer_item_text" for="emotion_items1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items3" id="emotion_items0_3" data-value="0">
+                        <label class="answer_item_text" for="emotion_items0_3">Никогда</label>
+                    </span> 
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я воздерживаюсь от того, чтобы делиться своими чувствами и эмоциями с окружающими. Особенно негативными.</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items4" id="emotion_items4_4" data-value="4">
+                        <label class="answer_item_text" for="emotion_items4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items4" id="emotion_items3_4" data-value="3">               
+                        <label class="answer_item_text" for="emotion_items3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items4" id="emotion_items2_4" data-value="2">
+                        <label class="answer_item_text" for="emotion_items2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items4" id="emotion_items1_4" data-value="1">
+                        <label class="answer_item_text" for="emotion_items1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items emotion_item" name="emotion_items4" id="emotion_items0_4" data-value="0">
+                        <label class="answer_item_text" for="emotion_items0_4">Никогда</label>
+                    </span> 
+                </div>
+            </li>            
+        </ul>
+    </section>
+    <section class="pattern sexuality">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Мне сложно быть открытой и раскрепощенной в сексе</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items1" id="sexuality_items4_1" data-value="4">
+                        <label class="answer_item_text" for="sexuality_items4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items1" id="sexuality_items3_1" data-value="3">               
+                        <label class="answer_item_text" for="sexuality_items3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items1" id="sexuality_items2_1" data-value="2">
+                        <label class="answer_item_text" for="sexuality_items2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items1" id="sexuality_items1_1" data-value="1">
+                        <label class="answer_item_text" for="sexuality_items1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items1" id="sexuality_items0_1" data-value="0">
+                        <label class="answer_item_text" for="sexuality_items0_1">Никогда</label>
+                    </span>                 
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я не знаю, как говорить с партнером о своих потребностях и желаниях в сексе</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items2" id="sexuality_items4_2" data-value="4">
+                        <label class="answer_item_text" for="sexuality_items4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items2" id="sexuality_items3_2" data-value="3">               
+                        <label class="answer_item_text" for="sexuality_items3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items2" id="sexuality_items2_2" data-value="2">
+                        <label class="answer_item_text" for="sexuality_items2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items2" id="sexuality_items1_2" data-value="1">
+                        <label class="answer_item_text" for="sexuality_items1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items2" id="sexuality_items0_2" data-value="0">
+                        <label class="answer_item_text" for="sexuality_items0_2">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я не получаю удовольствия от секса</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items3" id="sexuality_items4_3" data-value="4">
+                        <label class="answer_item_text" for="sexuality_items4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items3" id="sexuality_items3_3" data-value="3">               
+                        <label class="answer_item_text" for="sexuality_items3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items3" id="sexuality_items2_3" data-value="2">
+                        <label class="answer_item_text" for="sexuality_items2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items3" id="sexuality_items1_3" data-value="1">
+                        <label class="answer_item_text" for="sexuality_items1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items3" id="sexuality_items0_3" data-value="0">
+                        <label class="answer_item_text" for="sexuality_items0_3">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я беспокоюсь, что во время секса что-то пойдёт не так</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items4" id="sexuality_items4_4" data-value="4">
+                        <label class="answer_item_text" for="sexuality_items4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items4" id="sexuality_items3_4" data-value="3">               
+                        <label class="answer_item_text" for="sexuality_items3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items4" id="sexuality_items2_4" data-value="2">
+                        <label class="answer_item_text" for="sexuality_items2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items4" id="sexuality_items1_4" data-value="1">
+                        <label class="answer_item_text" for="sexuality_items1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items sexuality_item" name="sexuality_items4" id="sexuality_items0_4" data-value="0">
+                        <label class="answer_item_text" for="sexuality_items0_4">Никогда</label>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="pattern fear">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Мне трудно принимать важные решения</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items1" id="fear_items4_1" data-value="4">
+                        <label class="answer_item_text" for="fear_items4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items1" id="fear_items3_1" data-value="3">               
+                        <label class="answer_item_text" for="fear_items3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items1" id="fear_items2_1" data-value="2">
+                        <label class="answer_item_text" for="fear_items2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items1" id="fear_items1_1" data-value="1">
+                        <label class="answer_item_text" for="fear_items1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items1" id="fear_items0_1" data-value="0">
+                        <label class="answer_item_text" for="fear_items0_1">Никогда</label>
+                    </span> 
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">У меня бывают навязчивые мысли, от которых мне тяжело избавиться</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items2" id="fear_items4_2" data-value="4">
+                        <label class="answer_item_text" for="fear_items4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items2" id="fear_items3_2" data-value="3">               
+                        <label class="answer_item_text" for="fear_items3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items2" id="fear_items2_2" data-value="2">
+                        <label class="answer_item_text" for="fear_items2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items2" id="fear_items1_2" data-value="1">
+                        <label class="answer_item_text" for="fear_items1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items2" id="fear_items0_2" data-value="0">
+                        <label class="answer_item_text" for="fear_items0_2">Никогда</label>
+                    </span> 
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я чувствую беспричинную тревогу</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items3" id="fear_items4_3" data-value="4">
+                        <label class="answer_item_text" for="fear_items4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items3" id="fear_items3_3" data-value="3">               
+                        <label class="answer_item_text" for="fear_items3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items3" id="fear_items2_3" data-value="2">
+                        <label class="answer_item_text" for="fear_items2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items3" id="fear_items1_3" data-value="1">
+                        <label class="answer_item_text" for="fear_items1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items3" id="fear_items0_3" data-value="0">
+                        <label class="answer_item_text" for="fear_items0_3">Никогда</label>
+                    </span> 
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я беспокоюсь по пустякам</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items4" id="fear_items4_4" data-value="4">
+                        <label class="answer_item_text" for="fear_items4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items4" id="fear_items3_4" data-value="3">               
+                        <label class="answer_item_text" for="fear_items3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items4" id="fear_items2_4" data-value="2">
+                        <label class="answer_item_text" for="fear_items2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items4" id="fear_items1_4" data-value="1">
+                        <label class="answer_item_text" for="fear_items1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items fear_item" name="fear_items4" id="fear_items0_4" data-value="0">
+                        <label class="answer_item_text" for="fear_items0_4">Никогда</label>
+                    </span> 
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="pattern past_relationships">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Общаясь с новым избранником, я часто сравниваю его с предыдущим</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items1" id="past_relationships_items4_1" data-value="4">
+                        <label class="answer_item_text" for="past_relationships_items4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items1" id="past_relationships_items3_1" data-value="3">               
+                        <label class="answer_item_text" for="past_relationships_items3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items1" id="past_relationships_items2_1" data-value="2">
+                        <label class="answer_item_text" for="past_relationships_items2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items1" id="past_relationships_items1_1" data-value="1">
+                        <label class="answer_item_text" for="past_relationships_items1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items1" id="past_relationships_items0_1" data-value="0">
+                        <label class="answer_item_text" for="past_relationships_items0_1">Никогда</label>
+                    </span>                
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Мне не хватает многого, что было в моих прошлых отношениях</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items2" id="past_relationships_items4_2" data-value="4">
+                        <label class="answer_item_text" for="past_relationships_items4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items2" id="past_relationships_items3_2" data-value="3">               
+                        <label class="answer_item_text" for="past_relationships_items3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items2" id="past_relationships_items2_2" data-value="2">
+                        <label class="answer_item_text" for="past_relationships_items2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items2" id="past_relationships_items1_2" data-value="1">
+                        <label class="answer_item_text" for="past_relationships_items1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items2" id="past_relationships_items0_2" data-value="0">
+                        <label class="answer_item_text" for="past_relationships_items0_2">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я не уверена, что мои прошлые отношения можно считать законченными</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items3" id="past_relationships_items4_3" data-value="4">
+                        <label class="answer_item_text" for="past_relationships_items4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items3" id="past_relationships_items3_3" data-value="3">               
+                        <label class="answer_item_text" for="past_relationships_items3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items3" id="past_relationships_items2_3" data-value="2">
+                        <label class="answer_item_text" for="past_relationships_items2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items3" id="past_relationships_items1_3" data-value="1">
+                        <label class="answer_item_text" for="past_relationships_items1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items3" id="past_relationships_items0_3" data-value="0">
+                        <label class="answer_item_text" for="past_relationships_items0_3">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">В моих прошлых отношениях имели место быть сильные эмоциональные качели</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items4" id="past_relationships_items4_4" data-value="4">
+                        <label class="answer_item_text" for="past_relationships_items4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items4" id="past_relationships_items3_4" data-value="3">               
+                        <label class="answer_item_text" for="past_relationships_items3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items4" id="past_relationships_items2_4" data-value="2">
+                        <label class="answer_item_text" for="past_relationships_items2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items4" id="past_relationships_items1_4" data-value="1">
+                        <label class="answer_item_text" for="past_relationships_items1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items past_relationships_item" name="past_relationships_items4" id="past_relationships_items0_4" data-value="0">
+                        <label class="answer_item_text" for="past_relationships_items0_4">Никогда</label>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="pattern communication">
+        <ul class="pattern_list">
+            <li class="pattern_list__items">
+                <p class="question">Мне трудно быть открытой, общаясь с новыми людьми</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items1" id="communication_items4_1" data-value="4">
+                        <label class="answer_item_text" for="communication_items4_1">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items1" id="communication_items3_1" data-value="3">               
+                        <label class="answer_item_text" for="communication_items3_1">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items1" id="communication_items2_1" data-value="2">
+                        <label class="answer_item_text" for="communication_items2_1">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items1" id="communication_items1_1" data-value="1">
+                        <label class="answer_item_text" for="communication_items1_1"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items1" id="communication_items0_1" data-value="0">
+                        <label class="answer_item_text" for="communication_items0_1">Никогда</label>
+                    </span>                 
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Я часто не знаю, о чем говорить на свидании</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items2" id="communication_items4_2" data-value="4">
+                        <label class="answer_item_text" for="communication_items4_2">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items2" id="communication_items3_2" data-value="3">               
+                        <label class="answer_item_text" for="communication_items3_2">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items2" id="communication_items2_2" data-value="2">
+                        <label class="answer_item_text" for="communication_items2_2">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items2" id="communication_items1_2" data-value="1">
+                        <label class="answer_item_text" for="communication_items1_2"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items2" id="communication_items0_2" data-value="0">
+                        <label class="answer_item_text" for="communication_items0_2">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Общаясь с мужчиной, я чувствую себя не в своей тарелке</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items3" id="communication_items4_3" data-value="4">
+                        <label class="answer_item_text" for="communication_items4_3">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items3" id="communication_items3_3" data-value="3">               
+                        <label class="answer_item_text" for="communication_items3_3">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items3" id="communication_items2_3" data-value="2">
+                        <label class="answer_item_text" for="communication_items2_3">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items3" id="communication_items1_3" data-value="1">
+                        <label class="answer_item_text" for="communication_items1_3"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items3" id="communication_items0_3" data-value="0">
+                        <label class="answer_item_text" for="communication_items0_3">Никогда</label>
+                    </span>
+                </div>
+            </li>
+            <li class="pattern_list__items">
+                <p class="question">Бывает, что в общении я бросаюсь в крайность: или рассказываю о себе слишком много, или не
+                    говорю практически ничего</p>
+                <div class="answer">
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items4" id="communication_items4_4" data-value="4">
+                        <label class="answer_item_text" for="communication_items4_4">Постоянно</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items4" id="communication_items3_4" data-value="3">               
+                        <label class="answer_item_text" for="communication_items3_4">Часто</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items4" id="communication_items2_4" data-value="2">
+                        <label class="answer_item_text" for="communication_items2_4">Иногда</label> 
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items4" id="communication_items1_4" data-value="1">
+                        <label class="answer_item_text" for="communication_items1_4"> Редко</label>
+                    </span>
+                    <span>
+                        <input type="radio" class="answer_items communication_item" name="communication_items4" id="communication_items0_4" data-value="0">
+                        <label class="answer_item_text" for="communication_items0_4">Никогда</label>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="test-result">
+        <p class="error v-hidden">Вы ответили не на все вопросы, пожалуйста проверьте еще раз!</p>
+        <button class="get_result">Узнать результат</button>
+    </section>
+        
+    <section class="result">
+        <h2>Результаты теста</h2>
+        <p >В результате теста вы получаете сводку по шкалам и можете увидеть, в каких шкалах вы
+            набрали наибольшее количество баллов. То есть, чем вы «здоровее», тем меньше у вас
+            баллов по каждой из шкал.</p>
+        <h3>Самооценка</h3>
+        <p class="result_test_item">Вы набрали: <span class="self_rating_result"></span> из 16</p>
+        <p>Трезво оценивать себя, свои возможности и качества, своё место среди других людей – это
+            фундамент уверенности в себе. Способность оценить свои силы и возможности, а также быть себе
+            лучшим критиком – это то, в чем нуждается каждый из нас.
+            Если вы набрали много баллов по этой шкале, то вам следует обратить внимание на свою
+            самооценку. Низкая самооценка делает нас очень уязвимыми к самым незначительным внешним
+            уколам. Жизнь с низкой самооценкой накапливает в себе неудачи и разочарования, которые, в
+            свою очередь, способны пробить брешь в нашем психологическом Здоровье и благополучии.</p>
+        <h3>Принятие себя</h3>
+        <p class="result_test_item"> Вы набрали: <span class="self_acceptance_result"></span> из 16</p>
+        <p>Принятие себя – это всегда про привычку относиться к себе и своим особенностям без негативной
+            окраски, просто как к данности. Бережное и принимающее отношение к себе – это всегда про
+            любовь. Если вам сложно принимать себя, свои особенности и недостатки, то, скорее всего, это
+            таит в себе много переживаний из прошлого, из вашего детства. Принятие себя способствует
+            адекватной самооценке, эмоциональной стабильности и душевному здоровью. Возможно,
+            именно сейчас пришло время лучше узнать и полюбить самого важного человека в вашей жизни-
+            себя самого.</p>
+        <h3>Границы</h3>
+        <p class="result_test_item">Вы набрали: <span class="scope_result"></span> из 16</p>
+        <p>Наши границы позволяют нам быть в контакте с собой и окружающими нас людьми. Если у вас
+            есть проблемы с границами, то вам очень сложно построить близкие отношения. Человек с
+            размытыми границами легко впадает в зависимость от другого, а если границы слишком жёсткие
+            – то вы будете очень болезненно и жестко реагировать на любое приближение к вам, даже если
+            приближение это сулит только хорошее. Разобраться с границами и лучше понять себя помогает
+            психотерапия и внимательное отношение к себе и своим ощущениям «здесь и сейчас».</p>
+        <h3>Эмоции</h3>
+        <p class="result_test_item">Вы набрали: <span class="emotion_result"></span> из 16</p>
+        <p>Быть в контакте с собой и окружающими помогает четкое и своевременное понимание своих
+            эмоциональных переживаний и чувств. Наши эмоции – это тонкий механизм, который очень четко
+            и быстро даёт нам понять, что сейчас происходит, сигнализирует об опасности и сообщает о
+            состоянии организма. Мы никогда не сможем до конца понимать себя, если не научимся
+            понимать свои эмоции, отслеживать их и слышать, что они пытаются нам донести.</p>
+        <h3>Сексуальность</h3>
+        <p class="result_test_item">Вы набрали: <span class="sexuality_result"></span> из 16</p>
+        <p>Никакая другая близость не будет полноценна, если в паре нет сексуальной близости. Секс таит в
+            себе много переживаний и способен принести как максимальное удовольствие себе и партнеру,
+            так и полнейшее разочарование и чувство вины. Чтобы не попасть во вторую категорию,
+            необходимо не только стремиться удовлетворить другого, но и научиться получать
+            удовлетворение и радость от сексуальной близости самой. Для этого необходимо понять себя,
+            принять своё тело и изучить, что ему нравится, а что нет. Секс – очень большая часть отношений,
+            разве стоит пускать ее на самотёк?</p>
+        <h3>Страхи, тревожность</h3>
+        <p class="result_test_item">Вы набрали: <span class="fear_result"></span> из 16</p>
+        <p>Тревога – это нормальное психологическое явление, которое сигнализирует нам об опасности,
+            важности тех или иных событий или неудовлетворенности чем-либо. Но если вы испытываете
+            очень сильную тревогу по относительно малым поводам, если это случается довольно часто и
+            сильно влияет на повседневную жизнь, то есть риск возникновения тревожного расстройства. С
+            тревожностью также связаны раздражительность, утомляемость, физическое недомогание,
+            снижение памяти, плохой сон. При таких симптомах не помешает обратиться к врачу, а также
+            записаться на приём к психотерапевту. Симптомы тревоги и тревожное расстройство поддаются
+            полной коррекции в процессе терапии.</p>
+        <h3>Груз прошлых отношений</h3>
+        <p class="result_test_item">Вы набрали: <span class="past_relationships_result"></span> из 16</p>
+        <p>Начиная или планируя начать новые отношения подумайте, а точно ли вы закончили
+            предыдущие? Для того, чтобы построить крепкие и близкие отношения в будущем, необходимо
+            понять, что же именно вы ищите и сделать выводы из прошлого. Если в прошлых отношениях
+            были сильные чувства, эмоциональная нестабильность, то есть риск совершить старые ошибки и
+            идти по прошлому сценарию.</p>
+        <h3>Общение</h3>
+        <p class="result_test_item">Вы набрали: <span class="communication_result"></span> из 16</p>
+        <p>Проблемы с коммуникацией – самый частый запрос к психологу в семейной консультации.
+            Выстраивание отношений невозможно без открытого и безопасного диалога, без умения слушать
+            и слышать партнера, без оберегания своих границ и уважения к чужим, без умения решать
+            конфликты. Если вам сложно общаться с близкими или посторонними, если тяжело доносить свою
+            позицию, если в общении вам часто бывает некомфортно, то сейчас самое время найти, что же
+            кроется за этими симптомами и избавиться от них.</p>
+    </section>
+    <script src="./main.js"></script>  
+</body>
+</html>
