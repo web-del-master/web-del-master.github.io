@@ -1,3 +1,35 @@
 body{
     max-width: 320px;
 }
+.modal_content{
+    text-align: center;
+}
+
+
+.modal_content h3{
+    margin-top: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:700;
+    font-size: 14px;
+}
+.modal_content h4{
+    margin:20px 0 15px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:700;
+    font-size: 17px;
+}
+.modal_content h5{
+    margin:20px 0 20px 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight:700;
+    font-size: 18px;
+    color:#dd354e;
+}
+.modal_content p{
+    width:80%;
+    margin: 0 auto;
+}
+
+.modal_frame{
+    margin:20px 0 50px 0;
+}

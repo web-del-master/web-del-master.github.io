@@ -20,9 +20,9 @@
         </nav>
         <div class="hr_red"></div>
         <section class="social_nav">
-            <a class="social_nav__vk" href="#"><img src="./img/icons8_VKontakte_48px_1.png" alt="vk"></a>
+            <a class="social_nav__vk" href="https://vk.com/yasnaya1"><img src="./img/icons8_VKontakte_48px_1.png" alt="vk"></a>
             <a class="social_nav__inst" href="#"><img src="./img/icons8_Instagram_48px_1.png" alt="inst"></a>
-            <a class="social_nav__tel" href="#"><img src="./img/icons8_Sent_48px_1.png" alt="telegramm"></a>
+            <a class="social_nav__tel" href="https://tlgg.ru/@elenakotelnik"><img src="./img/icons8_Sent_48px_1.png" alt="telegramm"></a>
         </section>
         <section class="kurs_main">
             <p>Онлайн-курс для всех, кто хочет правильно писать и лучше разбираться в том, как устроен русский язык!</p>
@@ -127,7 +127,7 @@
                         <li>-15% скидки на пакет «Продвинутый"</li>
                     </ul>
                     <p>СТОИМОСТЬ УЧАСТИЯ:<span>900р.</span></p>
-                    <button>УЧАСТВОВАТЬ</button>
+                    <button class="active_modal">УЧАСТВОВАТЬ</button>
                 </div>
                 <div class="pay_descr__card ">
                     <ul>
@@ -137,7 +137,7 @@
                         <li>-30% скидки на пакет «Отличник»</li>
                     </ul>
                     <p>СТОИМОСТЬ УЧАСТИЯ:<span>1500р.</span></p>
-                    <button>УЧАСТВОВАТЬ</button>
+                    <button class="active_modal">УЧАСТВОВАТЬ</button>
                 </div>
                 <div class="pay_descr__card hidden">
                     <ul>
@@ -148,7 +148,7 @@
                         <li>-бесплатный (на месяц) доступ к записям курса</li>
                     </ul>
                     <p>СТОИМОСТЬ УЧАСТИЯ:<span>2500р.</span></p>
-                    <button>УЧАСТВОВАТЬ</button>
+                    <button class="active_modal">УЧАСТВОВАТЬ</button>
                 </div>
             </div>
         </div>
@@ -161,7 +161,7 @@
             <li>-15% скидки на пакет «Продвинутый"</li>
         </ul>
         <p>СТОИМОСТЬ УЧАСТИЯ:<span>900р.</span></p>
-        <button class="mobile_price__btn">УЧАСТВОВАТЬ</button>
+        <a href="./pay.html"><button class="mobile_price__btn">УЧАСТВОВАТЬ</button></a>
         <h4 class="header_price">Пакет 3 «Отличник»</h4>
         <ul>
             <li>-5 общих видеозанятий</li>
@@ -170,7 +170,7 @@
             <li>-30% скидки на пакет «Отличник»</li>
         </ul>
         <p>СТОИМОСТЬ УЧАСТИЯ:<span>1500р.</span></p>
-        <button class="mobile_price__btn">УЧАСТВОВАТЬ</button>
+        <a href="./pay.html"><button class="mobile_price__btn">УЧАСТВОВАТЬ</button></a>
         <h4 class="header_price">Пакет 2 «Продвинутый»</h4>
         <ul>
             <li>-5 общих видеозанятий</li>
@@ -180,15 +180,29 @@
             <li>-бесплатный (на месяц) доступ к записям курса</li>
         </ul>
         <p>СТОИМОСТЬ УЧАСТИЯ:<span>2500р.</span></p>
-        <button class="mobile_price__btn">УЧАСТВОВАТЬ</button>
+        <a href="./pay.html"><button class="mobile_price__btn">УЧАСТВОВАТЬ</button></a>
     </section>    
     <section class="pre_footer">        
             <p>Цель курса –освоить «трудные» правила орфографии и пунктуации русского языка</p>
             <p>ПРИМИ УЧАСТИЕ И УЗНАЙ</p>
             <span class="pre_footer_five">« 5 »</span>
             <h1>Как выучить русский язык на</h1> 
-    </section>
-    <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=&default-sum=&button-text=11&hint=&successURL=&quickpay=shop&account=410013216477285" width="423" height="215" frameborder="0" allowtransparency="true" scrolling="no"></iframe>    
+    </section> 
+    <div class="modal_bg hidden">                
+    </div>
+    <section class="modal_content hidden">
+        <img class="del" src="./img/icons8_Delete_50px.png" alt="">
+        <h3>Оплата участия возможна двумя способами</h3>
+        <p>Пакет 1 «Знающий» 900р <br>
+           Пакет 2 «Продвинутый» 1500р <br>
+           Пакет 3 «Отличник» 2500р</p>
+    <h4>1. Перевод на карту Сбербанка</h4>
+    <p>Выберите нужный вам тариф, при переводе в сообщении уажите контакты для связи.</p>
+    <h5>2202 2007 8018 4592</h5>
+    <h4>2. Перевод Яндекс Деньги</h4>
+    <p>В поле "Назначение перевода", укажите контакты для связи.</p>
+    <iframe class="modal_frame" src="https://money.yandex.ru/quickpay/shop-widget?writer=buyer&targets=&targets-hint=&default-sum=&button-text=11&hint=&successURL=&quickpay=shop&account=410013216477285" width="423" height="215" frameborder="0" allowtransparency="true" scrolling="no"></iframe>    
+    </section>   
     <footer class="footer">
         <ul class="footer_menu">
             <li><a href="#teacher">Преподаватель</a></li>
@@ -196,12 +210,12 @@
             <li><a href="#pay">Оплата</a></li>
         </ul>
         <ul class="footer_social">
-            <li><a href="#"><img src="./img/icons8_VK.com_50px.png" alt="vk"></a></li>
+            <li><a href="https://vk.com/yasnaya1"><img src="./img/icons8_VK.com_50px.png" alt="vk"></a></li>
             <li><a href="#"><img src="./img/icons8_Instagram_50px_1.png" alt="inst"></a></li>
-            <li><a href="#"><img src="./img/icons8_Sent_50px.png" alt="telegramm"></a></li>
+            <li><a href="https://tlgg.ru/@elenakotelnik"><img src="./img/icons8_Sent_50px.png" alt="telegramm"></a></li>
         </ul>
         <p>Спикер: Елена Котельникова, учитель русского языка</p>
-    </footer>    
+    </footer>        
     <script src="./script.js"></script>
 </body>
 </html>
